@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>Projects</title>
+        <meta name="viewport" content="width=device-width">
+
+        <!-- syntax highlighting CSS -->
+        <link rel="stylesheet" href="/css/syntax.css">
+
+        <!-- Custom CSS -->
+        <link rel="stylesheet" href="/css/main.css">
+
+    </head>
+    <body>
+
+        <div class="site">
+          <div class="header">
+            <h1 class="title"><a href="/">Iago Abal</a></h1>
+            <a class="extra" href="/">home</a>
+            <!-- <a class="extra" href="/bio.html">bio</a> -->
+            <a class="extra" href="/phd.html">phd</a>
+            <a class="extra" href="/projects.html">projects</a>
+          </div>
+
+          <h1>some projects I worked on</h1>
+
+<h2>Satisfiability testing of software requirements (2012--2013)</h2>
+
+<p>The purpose of this research project, developed in partnership with <a href="http://www.educed-emb.com" target="_blank">Educed Lda</a>, was to explore the design of a <em>tractable</em> declarative language to write software requirement specifications. This language consists of a number of phrases, or boilerplates, capturing common patterns in software analysis. A requirements document made of these phrases can be encoded into a logic of quantified formulas over uninterpreted functions and integer arithmetic. We use a model finder for testing the satisfiability of such documents in order to analyze their consistency, and to obtain examples that help understanding the system being constructed.</p>
+
+<h2>Domain-specific term rewriting to solve bit-vector arithmetic problems (2011--2012)</h2>
+
+<p>Bit-blasting does not scale very well, especially in the presence of operators like multiplication or division. The main reason for this is the loss of high-level algebraic structure present in the original decision problem. However, one can exploit algebraic properties concerning the domain of bit-vectors to rewrite a problem into an equivalent, but computationally less hard, problem.</p>
+
+<p>project proposal: <a href="http://bit.ly/iago-mei-rpd">Using Term Rewriting to Solve Bit-Vector Arithmetic Problems</a> (includes a short review of the state of the art)</p>
+
+<p>poster: <em>Using term rewriting to solve bit-vector arithmetic problems</em> <a href="http://www.springerlink.com/content/f587116230421420/">springer</a> <a href="http://bit.ly/iago-sat2012">paper</a> <a href="http://bit.ly/iago-sat2012poster">poster</a></p>
+
+<p>poster: <em>Towards a domain-specific theorem prover for bit-vector arithmetic</em> <a href="http://dl.acm.org/citation.cfm?id=2494445">acm</a> <a href="http://bit.ly/iago-c3s2e13">paper</a></p>
+
+<h2>Modeling and testing Darcs&#39;s patch theory kernel (2010--2011)</h2>
+
+<p>In this work we capture Darcs&#39;s Patch Theory kernel in relational logic and test the satisfiability of the most well-known properties of this theory. We also present an analysis of Darcs maintainability identifying some important Darcs weaknesses. Finally, we measure the coverage of an important Darcs test suite showing that there is lot of room for improvement, and we show how to improve this coverage substantially. <a href="http://dl.iagoabal.eu/projects/MTDPTK/report.pdf">report (to be polished)</a></p>
+
+<p>patches: darcs get --lazy http://darcs.net &amp;&amp; cd darcs.net &amp;&amp; darcs changes --match &#39;author Iago&#39;</p>
+
+<h2>A Damas-Milner type system extended with predicate subtypes (2010--2012)</h2>
+
+<p>This thesis proposes an approach to introduce contracts as types into mainstream statically-typed functional programming languages. For this purpose, we have extended a Damas-Milner type system with predicate subtypes in the spirit of PVS, and developed a proof-of-concept programming language based on this system. In this way, the concepts of pre/postcondition and type invariant are built into the type system as <em>contract types</em>, and integrate smoothly with type polymorphism. <a href="http://bit.ly/iagoabalpfc">engineering dissertation</a></p>
+
+
+          <div class="footer">
+            <div class="contact">
+              <p>
+                Iago Abal<br/>
+                mail@iagoabal.eu
+              </p>
+            </div>
+            <div class="contact">
+              <p>
+                <a href="http://plus.iagoabal.eu" target="_blank">google+ blog</a><br/>
+                <a href="http://cv.iagoabal.eu" target="_blank">linkedin profile</a><br/>
+                <a href="https://bitbucket.org/iago" target="_blank">public repositories</a><br/>
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Google Analytics -->
+        <script type="text/javascript">
+
+          var _gaq = _gaq || [];
+          _gaq.push(['_setAccount', 'UA-33454433-1']);
+          _gaq.push(['_trackPageview']);
+
+          (function() {
+            var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+          })();
+
+        </script>
+
+    </body>
+</html>
