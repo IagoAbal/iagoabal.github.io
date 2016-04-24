@@ -24,6 +24,7 @@
             <a class="extra" href="/projects">projects</a>
           </div>
 
+	  <p style="color:gray;"><i>(Last updated in April 2016.)</i></p>
           <h1>effective bug finding with effects</h1>
 
 <p>Todays software still suffers from a significant amount of resource manipulation bugs, such as accessing a de-allocated memory region, or taking a non-reentrant lock twice. While conceptually simple, these bugs are difficult to spot by humans when they occur in large functions or with complex control flow, or when the manipulation of resources spans multiple functions. Finding these bugs is a challenge also for syntactic code scanners, which cannot afford to explore all call chains. On the other hand, inter-procedural static analyzers may find these bugs but are often difficult to scale. In this project, I propose a shape-and-effect inference system for C, that enables efficient inter-procedural reasoning on large code bases. By building a prototype static analyzer based on this idea, I show how model-checking the <em>effect abstraction</em> of individual functions using simple and fast intra-procedural algorithms is effective at revealing deep resource manipulation bugs.</p>
@@ -70,7 +71,6 @@
               </p>
             </div>
           </div>
-	  <p><i>(Last updated in April 2016.)</i></p>
         </div>
 
         <!-- Google Analytics -->
