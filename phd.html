@@ -20,24 +20,27 @@
             <h1 class="title"><a href="/">Iago Abal</a></h1>
             <a class="extra" href="/">home</a>
             <!-- <a class="extra" href="/bio.html">bio</a> -->
-            <a class="extra" href="/phd.html">phd</a>
-            <a class="extra" href="/projects.html">projects</a>
+            <a class="extra" href="/phd">phd</a>
+            <a class="extra" href="/projects">projects</a>
           </div>
 
-          <p>(Updated on 2014/11/25.)</p>
+          <h1>effective bug finding with effects</h1>
 
-<h1>static analysis and verification of highly configurable software</h1>
-
-<p>Software product line engineering is a cost-effective approach
-for developing and maintaining a family of software systems. Verification of
-software product lines is, however, a challenging task when dealing with large
-software families. The number of final products is often in the order of billions,
-and bugs can occur in any product as a result of feature interactions. This Ph.D.
-project aims to address the main difficulties in the applicability of verification
-techniques to highly configurable software, by using the Linux kernel as our
-primary subject of study.</p>
+<p>Todays software still suffers from a significant amount of resource manipulation bugs, such as accessing a de-allocated memory region, or taking a non-reentrant lock twice. While conceptually simple, these bugs are difficult to spot by humans when they occur in large functions or with complex control flow, or when the manipulation of resources spans multiple functions. Finding these bugs is a challenge also for syntactic code scanners, which cannot afford to explore all call chains. On the other hand, inter-procedural static analyzers may find these bugs but are often difficult to scale. In this project, I propose a shape-and-effect inference system for C, that enables efficient inter-procedural reasoning on large code bases. By building a prototype static analyzer based on this idea, I show how model-checking the <em>effect abstraction</em> of individual functions using simple and fast intra-procedural algorithms is effective at revealing deep resource manipulation bugs.</p>
 
 <h2>papers</h2>
+
+<h3>2016 (under review)</h3>
+
+<ul>
+<li>Shape-Region and Effect Inference for C(IL)</li>
+<li>Inter-Procedural Analysis of C Programs with Shape-Region and Effect Abstractions
+
+<ul>
+<li>A <a href="http://dl.iagoabal.eu/talk/eba-lunch.pdf">presentation of EBA</a> over lunch.</li>
+</ul></li>
+<li>A Hundred Variability Bugs in Highly Configurable Systems</li>
+</ul>
 
 <h3>2014</h3>
 
@@ -45,24 +48,9 @@ primary subject of study.</p>
 <li><a href="http://dl.iagoabal.eu/publications/ase2014.pdf">42 Variability Bugs in the Linux Kernel: A Qualitative Study</a> (ASE 2014)
 
 <ul>
-<li><a href="http://dl.iagoabal.eu/publications/ASE2014/slides.pdf">My ASE&#39;14 presentation</a></li>
-<li><a href="http://VBDb.itu.dk/">The Variability Bugs Database</a></li>
+<li>Here is my <a href="http://dl.iagoabal.eu/publications/ASE2014/slides.pdf">ASE&#39;14 presentation</a>.</li>
+<li>Check out <a href="http://VBDb.itu.dk/">The Variability Bugs Database</a>!</li>
 </ul></li>
-<li><a href="http://bit.ly/ITU-TR-2014-180">40 Variability Bugs in the Linux Kernel: A Qualitative Study</a> (ITU Technical Report)</li>
-</ul>
-
-<h2>talks</h2>
-
-<h3>2014</h3>
-
-<ul>
-<li><a href="http://bit.ly/iago-fosd2014">Finding Variability Bugs in Linux</a> (FOSD meeting 2014)</li>
-</ul>
-
-<h3>2013</h3>
-
-<ul>
-<li><a href="http://dl.iagoabal.eu/talk/variete13/slides.pdf">A collection of variability-induced bugs in the Linux kernel</a></li>
 </ul>
 
 
@@ -75,12 +63,14 @@ primary subject of study.</p>
             </div>
             <div class="contact">
               <p>
-                <a href="http://plus.iagoabal.eu" target="_blank">google+ blog</a><br/>
-                <a href="http://cv.iagoabal.eu" target="_blank">linkedin profile</a><br/>
-                <a href="https://bitbucket.org/iago" target="_blank">public repositories</a><br/>
+                <a href="http://plus.iagoabal.eu" target="_blank">Google+ blog</a><br/>
+                <a href="http://cv.iagoabal.eu" target="_blank">Linkedin profile</a><br/>
+                <a href="https://github.com/iagoabal" target="_blank">GitHub</a> and
+                <a href="https://bitbucket.org/iago" target="_blank">Bitbucket</a> profiles<br/>
               </p>
             </div>
           </div>
+	  <p><i>(Last updated in April 2016.)</i></p>
         </div>
 
         <!-- Google Analytics -->
